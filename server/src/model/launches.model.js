@@ -125,7 +125,7 @@ async function addNewLaunch(launch) {
 async function checkLaunch(id) {
     return await launches.findOne({
         flightNumber: id
-    })
+    });
 }
 
 async function deleteLaunch(id) {
