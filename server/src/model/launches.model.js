@@ -147,8 +147,3 @@ module.exports = {
     checkLaunch,
     loadLaunchData
 }
-
-/* 
-    to convert a map result to array use
-    Array.from(launches.values())
-*/
