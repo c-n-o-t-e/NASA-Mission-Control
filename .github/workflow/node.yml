@@ -15,5 +15,3 @@ jobs:
           node-version: "16"
       - run: npm install
       - run: npm run build --prefix client
-  # deploy:
-  #   needs: build //means deploy needs build to be successful
