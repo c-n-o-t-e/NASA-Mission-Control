@@ -117,7 +117,7 @@ async function addNewLaunch(launch) {
         upcoming: true,
         customers: ['ZTM', 'NASA'],
         flightNumber: latestFlightNumber
-    })
+    });
 
     saveLaunch(launch);
 }
