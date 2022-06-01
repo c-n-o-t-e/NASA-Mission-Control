@@ -1,7 +1,7 @@
 const request = require('supertest');
 const app = require('../../app');
 const { mongoConnect, mongoDiscount } = require('../../services/mongo');
-const { loadPlanetsData } = require('../../planets.model')
+const { loadPlanetsData } = require('../../model/planets.model')
 
 describe('Launches API', () => {
     beforeEach(async () => {
