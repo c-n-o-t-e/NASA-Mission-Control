@@ -1,10 +1,12 @@
 const request = require('supertest');
 const app = require('../../app');
 const { mongoConnect, mongoDiscount } = require('../../services/mongo');
+const { loadPlanetsData } = require('../..model/planets.model')
 
 describe('Launches API', () => {
     beforeEach(async () => {
         await mongoConnect();
+        await loadPlanetsData();
     });
 
     afterAll(async () => {
@@ -97,7 +99,7 @@ describe('Launches API', () => {
                 .expect(201);
             
             await request(app)
-                .delete('/v1/launches/165')
+                .delete('/v1/launches/4')
                 .expect('Content-Type', /json/)
                 .expect(200);
         });
