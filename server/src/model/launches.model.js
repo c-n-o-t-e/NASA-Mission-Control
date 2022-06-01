@@ -71,7 +71,7 @@ async function loadLaunchData() {
 }
 
 async function findLaunch(filter) {
-    return await launches.findOne(filter)
+    return await launches.findOne(filter);
 }
 
 async function getAllLaunches(skip, limit) {
